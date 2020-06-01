@@ -121,7 +121,7 @@ final class GoogleMapController
     this.lifecycle = lifecycle;
     this.registrar = registrar;
     this.activityHashCode = registrarActivityHashCode;
-    this.markersController = new MarkersController(methodChannel);
+    this.markersController = new MarkersController(methodChannel, context);
     this.polygonsController = new PolygonsController(methodChannel, density);
     this.polylinesController = new PolylinesController(methodChannel, density);
     this.circlesController = new CirclesController(methodChannel, density);
